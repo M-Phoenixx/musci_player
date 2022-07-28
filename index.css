@@ -1,0 +1,33 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.bg{
+    width: 100%;
+    height: 100%;
+/* From https://css.glass */
+background: rgba(255, 255, 255, 0.05);
+border-radius: 16px;
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(0.9px);
+-webkit-backdrop-filter: blur(0.9px);
+display: flex;
+    align-items: center;
+    justify-content: center;
+}
+body{
+    width: 100%;
+    height: 100%;
+    background-image: url(https://image.shutterstock.com/image-vector/ilustration-goku-jump-force-fulcolor-600w-1950580240.jpg);
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: cover;
+    
+}
+.container{
+    background: snow;
+    width: 15rem;
+    height: 22rem;
+    display: flex;
+    flex-wrap: wrap;
+}
