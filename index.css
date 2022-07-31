@@ -74,8 +74,7 @@ body{
   transition: .5s;
 }
 .play:hover{
-    background: blue;
-    color: rgb(235, 243, 241);
+    color: rgb(23, 60, 226);
     transition: .5s;
     border-radius: 1rem;
 }
@@ -90,11 +89,59 @@ body{
 .icons{
     font-size: 2.5rem;
 }
+#pause{
+    display: none;
+}
 .play{
     border-radius: 1rem;
     font-size: 3rem;
 }
-@media only screen and (max-width:630px) {
+@media only screen and (max-width: 380px) {
+    #shear{
+        display: none;
+        visibility: hidden;
+    }
+    
+    .uper_part{
+        flex-direction: column;
+        width: 100%;
+    }
+    .imgdiv{
+       width: 100%;
+       height: 15rem;
+       margin-bottom: 10px;
+    }
+    #pause{
+      font-size: 3.3rem;
+    }
+    #play{
+        font-size: 3.5rem;
+    }
+    .buttons{
+        width: 100%;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-around;
+        margin-top: 20px;
+        margin-bottom: 20px ;
+    }
+    .icons{
+        font-size: 3rem;
+    }
+    .icon_bg{
+        width: 0;
+        height: 0;
+    }
+    .iconbg:hover{
+        width: 0rem;
+        height: 0rem;
+    }
+    
+    .play{
+        font-size: 2rem;
+    }
+}
+@media only screen and (max-width:630px )  and (min-width:490px) {
     .container{
         width: 70%;
     }
@@ -117,14 +164,19 @@ body{
         flex-direction: row;
     }
     .icons{
-        font-size: 2rem;
+        font-size: 3rem;
     }
-    #pause{
-        visibility: hidden;
-        background: red;
+    .icon_bg{
+        width: 4rem;
+        height: 4rem;
     }
+    .iconbg:hover{
+        width: 4rem;
+        height: 4rem;
+    }
+    
     .play{
-        font-size: 2rem;
+        font-size: 3rem;
     }
 }
 .names{
